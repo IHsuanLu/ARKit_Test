@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		8C6E9CDE208C75C6000551D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6E9CDD208C75C6000551D1 /* AppDelegate.swift */; };
 		8C6E9CE0208C75C6000551D1 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C6E9CDF208C75C6000551D1 /* art.scnassets */; };
-		8C6E9CE2208C75C6000551D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6E9CE1208C75C6000551D1 /* ViewController.swift */; };
+		8C6E9CE2208C75C6000551D1 /* RampPlacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6E9CE1208C75C6000551D1 /* RampPlacer.swift */; };
 		8C6E9CE5208C75C6000551D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C6E9CE3208C75C6000551D1 /* Main.storyboard */; };
 		8C6E9CE7208C75C6000551D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C6E9CE6208C75C6000551D1 /* Assets.xcassets */; };
 		8C6E9CEA208C75C6000551D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C6E9CE8208C75C6000551D1 /* LaunchScreen.storyboard */; };
 		8C6E9CF5208C75C6000551D1 /* TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6E9CF4208C75C6000551D1 /* TestTests.swift */; };
+		8C6E9D06208C8D64000551D1 /* RampPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6E9D05208C8D64000551D1 /* RampPicker.swift */; };
+		8C6E9D0B208DB630000551D1 /* Ramp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6E9D0A208DB630000551D1 /* Ramp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +32,7 @@
 		8C6E9CDA208C75C6000551D1 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C6E9CDD208C75C6000551D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C6E9CDF208C75C6000551D1 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		8C6E9CE1208C75C6000551D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8C6E9CE1208C75C6000551D1 /* RampPlacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RampPlacer.swift; sourceTree = "<group>"; };
 		8C6E9CE4208C75C6000551D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C6E9CE6208C75C6000551D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C6E9CE9208C75C6000551D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +40,8 @@
 		8C6E9CF0208C75C6000551D1 /* TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C6E9CF4208C75C6000551D1 /* TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTests.swift; sourceTree = "<group>"; };
 		8C6E9CF6208C75C6000551D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C6E9D05208C8D64000551D1 /* RampPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RampPicker.swift; sourceTree = "<group>"; };
+		8C6E9D0A208DB630000551D1 /* Ramp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ramp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +83,13 @@
 		8C6E9CDC208C75C6000551D1 /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				8C6E9CDD208C75C6000551D1 /* AppDelegate.swift */,
+				8C6E9D09208DB61F000551D1 /* Model */,
+				8C6E9D04208C8D41000551D1 /* Controller */,
 				8C6E9CDF208C75C6000551D1 /* art.scnassets */,
-				8C6E9CE1208C75C6000551D1 /* ViewController.swift */,
-				8C6E9CE3208C75C6000551D1 /* Main.storyboard */,
 				8C6E9CE6208C75C6000551D1 /* Assets.xcassets */,
+				8C6E9CE3208C75C6000551D1 /* Main.storyboard */,
 				8C6E9CE8208C75C6000551D1 /* LaunchScreen.storyboard */,
+				8C6E9CDD208C75C6000551D1 /* AppDelegate.swift */,
 				8C6E9CEB208C75C6000551D1 /* Info.plist */,
 			);
 			path = Test;
@@ -97,6 +102,23 @@
 				8C6E9CF6208C75C6000551D1 /* Info.plist */,
 			);
 			path = TestTests;
+			sourceTree = "<group>";
+		};
+		8C6E9D04208C8D41000551D1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8C6E9CE1208C75C6000551D1 /* RampPlacer.swift */,
+				8C6E9D05208C8D64000551D1 /* RampPicker.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8C6E9D09208DB61F000551D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8C6E9D0A208DB630000551D1 /* Ramp.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,7 +225,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C6E9CE2208C75C6000551D1 /* ViewController.swift in Sources */,
+				8C6E9CE2208C75C6000551D1 /* RampPlacer.swift in Sources */,
+				8C6E9D0B208DB630000551D1 /* Ramp.swift in Sources */,
+				8C6E9D06208C8D64000551D1 /* RampPicker.swift in Sources */,
 				8C6E9CDE208C75C6000551D1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,7 +385,7 @@
 				DEVELOPMENT_TEAM = LMNXHHZE26;
 				INFOPLIST_FILE = Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = henry.Test;
+				PRODUCT_BUNDLE_IDENTIFIER = henry.TestAR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -376,7 +400,7 @@
 				DEVELOPMENT_TEAM = LMNXHHZE26;
 				INFOPLIST_FILE = Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = henry.Test;
+				PRODUCT_BUNDLE_IDENTIFIER = henry.TestAR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
